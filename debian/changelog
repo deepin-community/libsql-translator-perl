@@ -1,0 +1,357 @@
+libsql-translator-perl (1.62-1) unstable; urgency=medium
+
+  * Import upstream version 1.62.
+  * Bump debhelper-compat to 13.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 18 Sep 2020 19:07:58 +0200
+
+libsql-translator-perl (1.61-1) unstable; urgency=medium
+
+  * Import upstream version 1.61.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.5.0.
+  * Set Rules-Requires-Root: no.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 23 Apr 2020 20:26:08 +0200
+
+libsql-translator-perl (1.60-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Laurent Baillet ]
+  * fix lintian wrong-path-for-interpreter error
+
+  [ gregor herrmann ]
+  * Import upstream version 1.60.
+  * Update (build) dependencies.
+  * Update debian/upstream/metadata.
+  * debian/coypright: drop information about removed files.
+  * Update years of packaging copyright.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Declare compliance with Debian Policy 4.4.1.
+  * Drop unneeded version constraints from (build) dependencies.
+  * Bump debhelper-compat to 12.
+  * debian/watch: use uscan version 4.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 14 Nov 2019 20:37:55 +0100
+
+libsql-translator-perl (0.11024-1) unstable; urgency=medium
+
+  * Import upstream version 0.11024.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.1.3.
+  * Bump debhelper compatibility level to 10.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 12 Jan 2018 18:32:50 +0100
+
+libsql-translator-perl (0.11023-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * debian/upstream/metadata: change GitHub/CPAN URL(s) to HTTPS.
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+  * Remove Ryan Niebur from Uploaders. Thanks for your work!
+
+  * Import upstream version 0.11023.
+  * Update debian/upstream/metadata.
+  * Update years of packaging copyright.
+  * Drop (build) dependency on liblist-moreutils-perl.
+  * Declare compliance with Debian Policy 4.1.2.
+  * Drop unneeded version constraints from some (build) dependencies.
+  * Bump debhelper compatibility level to 9.
+  * debian/rules: drop removal of previously empty manpage.
+  * Remove trailing whitespace in debian/control. Thanks to lintian.
+  * debian/control: add more packages to Recommends which are used by some
+    of the modules. Thanks to autopkgtest-pkg-perl.
+  * Add debian/tests/pkg-perl/smoke-files. Our autopkgtest's smoke test
+    needs more files.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 26 Dec 2017 21:39:25 +0100
+
+libsql-translator-perl (0.11021-1) unstable; urgency=medium
+
+  * Import upstream version 0.11021.
+  * Update {Upstream-,}Contact in debian/{copyright,upstream/metadata}.
+  * Add explicit build dependency + Recommends on libcgi-pm-perl.
+  * Update libgd*-perl in B-D-I and Recommends.
+  * Add build dependency on libdbd-sqlite3-perl for an additional test.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 3.9.6.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 12 Jun 2015 19:27:52 +0200
+
+libsql-translator-perl (0.11020-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * Add debian/upstream/metadata
+  * Imported upstream version 0.11020
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 17 Sep 2014 19:18:09 +0200
+
+libsql-translator-perl (0.11018-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop spelling.patch, merged upstream.
+  * Update years of packaging copyright.
+  * Add build dependency on libjson-perl, needed by new test.
+  * Drop version constraints from some (build) dependencies where nothing
+    older is in the archive.
+  * Declare compliance with Debian Policy 3.9.5.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 10 Jan 2014 22:36:59 +0100
+
+libsql-translator-perl (0.11016-1) unstable; urgency=low
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * Add a note to debian/NEWS about a removed module.
+  * Update years of packaging copyright.
+  * Set Standards-Version to 3.9.4 (no changes).
+  * Update build and runtime dependencies.
+  * Add a patch to fix some spelling mistakes in the POD.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 17 May 2013 20:06:16 +0200
+
+libsql-translator-perl (0.11011-1) unstable; urgency=low
+
+  * New upstream release.
+  * Drop patches, both merged upstream.
+  * debian/copyright: update to Copyright-Format 1.0; update copyright
+    years.
+  * Bump Standards-Version to 3.9.3 (no changes).
+  * Update build and runtime dependencies.
+  * Add debian/NEWS mentioning incompatible changes.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 13 May 2012 14:11:20 +0200
+
+libsql-translator-perl (0.11010-1) unstable; urgency=low
+
+  * New upstream release.
+  * Refresh patch use-digest-sha (offset).
+  * debian/copyright: add additional copyright holder, update years for
+    Module::Install.
+  * Add /me to Uploaders.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 06 Oct 2011 20:33:35 +0200
+
+libsql-translator-perl (0.11009-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ Ansgar Burchardt ]
+  * New upstream release.
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+
+ -- Ansgar Burchardt <ansgar@debian.org>  Sat, 03 Sep 2011 12:25:24 +0200
+
+libsql-translator-perl (0.11008-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ Jonathan Yu ]
+  * Rename source package to libsql-translator-perl, drop special
+    binary sqlfairy package in favour of a Provides
+
+  [ Maximilian Gass ]
+  * New upstream release
+   * Add (build-)dependency on libmoo-perl
+  * Add patch use-digest-sha to replace Digest::SHA1 with Digest::SHA
+  * Remove dependency on libdigest-sha1-perl
+  * Add patch pod-spelling to fix spelling mistake in POD
+  * Bump Standards-Version to 3.9.2: no changes necessary
+  * Increase debhelper compat level to 8
+
+ -- Maximilian Gass <mxey@cloudconnected.org>  Sun, 19 Jun 2011 11:51:52 +0200
+
+sqlfairy (0.11007-1) unstable; urgency=low
+
+  [ Antony Gelberg ]
+  * New upstream release
+
+  [ Jonathan Yu ]
+  * This release fixes the MySQL parser column comments bug;
+    Closes: #491706
+  * Standards-Version 3.9.1 (no changes)
+  * Refresh copyright information
+
+  [ gregor herrmann ]
+  * debian/control: remove versions from (build) dependencies on
+    libdigest-sha1-perl and libyaml-perl (already satisfied in lenny); fix
+    version for libspreadsheet-parseexcel-perl.
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Fri, 31 Dec 2010 19:30:33 -0500
+
+sqlfairy (0.11006-1) unstable; urgency=low
+
+  * New upstream release
+  * Remove POD spelling + whatis patches, applied upstream
+  * Use new 3.0 (quilt) source format
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Thu, 03 Jun 2010 21:46:00 -0400
+
+sqlfairy (0.11005-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+
+  [ gregor herrmann ]
+  * Add an additional copyright holder.
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Fri, 26 Feb 2010 19:43:37 -0500
+
+sqlfairy (0.11004-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+  * Update to DEP5 copyright format
+  * Standards-Version 3.8.4 (no changes)
+  * Refresh POD whatis patch
+  * Add a patch to fix POD spelling
+
+  [ gregor herrmann ]
+  * Add additional copyright holders.
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Sun, 14 Feb 2010 20:15:48 -0500
+
+sqlfairy (0.11003-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * Refresh all metadata files
+  * Rewrote control description
+  * Remove patch, I'm not sure it's necessary
+  * Added myself to Uploaders and Copyright
+  * Added a patch to add whatis entries (add README.source)
+
+  [ Ryan Niebur ]
+  * Take over for the Debian Perl Group; Closes: #548901 -- RFA
+  * debian/control: Added: Vcs-Svn field (source stanza). Changed:
+    Maintainer set to Debian Perl Group <pkg-perl-
+    maintainers@lists.alioth.debian.org> (was: Eric Dorland
+    <eric@debian.org>); Eric Dorland <eric@debian.org> moved to
+    Uploaders.
+  * debian/watch: use dist-based URL.
+  * move the direct change to a quilt patch
+  * Add myself to Uploaders
+  * Add debian/README.source to document quilt usage, as required by
+    Debian Policy since 3.8.0.
+  * New upstream release
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Mon, 26 Oct 2009 16:59:18 -0400
+
+sqlfairy (0.11002-1) unstable; urgency=low
+
+  * New upstream version. (Closes: #544904)
+  * debian/compat: Add, version 7.
+  * debian/control:
+    - Standards-Version to 3.8.3.
+    - Drop cdbs and build depend on debhelper > 7.
+    - Fix up dependencies. (Closes: #459583)
+  * debian/rules: Convert to dh instead of cdbs.
+
+ -- Eric Dorland <eric@debian.org>  Sun, 27 Sep 2009 18:14:12 -0400
+
+sqlfairy (0.09004-2) unstable; urgency=low
+
+  * debian/control: Add forgotten depend on libdigest-sha1-perl. (Closes:
+    #527239)
+
+ -- Eric Dorland <eric@debian.org>  Sun, 10 May 2009 03:19:20 -0400
+
+sqlfairy (0.09004-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    - Add ${misc:Depends}.
+    - Bump Standards-Version to 3.8.1.
+    - Add Build-Depends on libdigest-sha1-perl.
+  * debian/compat: Remove, use the cdbs default.
+
+ -- Eric Dorland <eric@debian.org>  Sat, 25 Apr 2009 22:02:16 -0400
+
+sqlfairy (0.09000-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    - Add linebreaks to the Depends and Build-Depends fields.
+    - Cleanup and sort the Depends and Build-Depends.
+    - Fix Vcs-* headers.
+    - Upgrade Standards-Version to 3.7.3.
+
+ -- Eric Dorland <eric@debian.org>  Sat, 08 Mar 2008 19:08:19 -0500
+
+sqlfairy (0.08.001-1) unstable; urgency=low
+
+  * New upstream release. (Closes: #427309)
+  * debian/control:
+    - Upgrade to Standards-Version to 3.7.2.2.
+    - Add Homepage and XS-Vcs-* headers.
+    - Use ${source:Version} instead of ${Source-Version}
+  * lib/SQL/Translator/Schema.pm, debian/control: Patch from Didrik Pinte to
+    fix sqlt-diagram failure. Add libgraph-perl to the depends and
+    build-depends (Closes: #433156)
+  * debian/watch: Update for new location on CPAN.
+
+ -- Eric Dorland <eric@debian.org>  Sat, 29 Sep 2007 23:51:26 -0400
+
+sqlfairy (0.08-1) unstable; urgency=low
+
+  * New upstream release. (Closes: #415010)
+
+ -- Eric Dorland <eric@debian.org>  Mon,  9 Apr 2007 01:25:46 -0400
+
+sqlfairy (0.07-5) unstable; urgency=low
+
+  * bin/sqlt-graph: Patch from Didrik Pinte to fix some variable reference
+    typos. (Closes: #406488)
+
+ -- Eric Dorland <eric@debian.org>  Thu, 18 Jan 2007 02:17:25 -0500
+
+sqlfairy (0.07-4) unstable; urgency=low
+
+  * debian/control: Depend on libgd-gd2-noxpm-perl | libgd-gd2-perl
+    instead of just libgd-gd2-perl. (Closes: #376377)
+
+ -- Eric Dorland <eric@debian.org>  Sun,  2 Jul 2006 17:17:48 -0400
+
+sqlfairy (0.07-3) unstable; urgency=low
+
+  * debian/control:
+    - Upgrade Standards-Version to 3.7.2.0.
+    - Use Build-Depends instead of Build-Depends-Indep for things
+      that need to be there for the clean target.
+
+ -- Eric Dorland <eric@debian.org>  Thu, 15 Jun 2006 22:41:38 -0400
+
+sqlfairy (0.07-2) unstable; urgency=low
+
+  * debian/watch: Add watch file.
+  * debian/control:
+    - Standards-Version to 3.7.1.0.
+    - Actually include proper Depends. Forgot dh_perl isn't as smart as
+      I wish it was. (Closes: #365824, #365825, #365826)
+
+ -- Eric Dorland <eric@debian.org>  Thu,  4 May 2006 00:24:16 -0400
+
+sqlfairy (0.07-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Eric Dorland <eric@debian.org>  Mon, 17 Apr 2006 01:57:31 -0400

@@ -1,0 +1,27 @@
+libsql-translator-perl (0.11016-1) unstable; urgency=low
+
+  From upstream Changes:
+
+  Remove SQL::Translator::Schema::Graph as announced in 0.11011
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 17 May 2013 19:40:24 +0200
+
+libsql-translator-perl (0.11011-1) unstable; urgency=low
+
+  From upstream Changes:
+
+  INCOMPATIBLE CHANGES:
+  * SQLT no longer supports setting separate conflicting values for the now
+    deprecated 'quote_table_names' and 'quote_field_names'. Instead their values
+    are proxied to the new 'quote_identifiers'. If 'quote_identifiers' is
+    supplied, the legacy settings are ignored (with a warning). If nothing is
+    specified the default is TRUE as before. If only one is specified - default
+    to its value for everything, and if both are specified with a conflicting
+    value an exception is thrown.
+  * Partial quoting support has been added in SQLite. It is currently disabled by
+    default, you need to request is explicitly with quote_identifiers => 1. In a
+    future version of SQL::Translator *THIS DEFAULT BEHAVIOR WILL CHANGE*.
+    If you do NOT WANT quoting, set quote_identifiers to a false value to
+    protect yourself from changes in a future release.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 13 May 2012 14:04:15 +0200

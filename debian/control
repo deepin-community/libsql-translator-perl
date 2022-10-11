@@ -1,0 +1,73 @@
+Source: libsql-translator-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Eric Dorland <eric@debian.org>,
+           gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libcarp-clan-perl <!nocheck>,
+                     libcgi-pm-perl <!nocheck>,
+                     libclass-makemethods-perl <!nocheck>,
+                     libdbd-sqlite3-perl <!nocheck>,
+                     libdbi-perl <!nocheck>,
+                     libfile-sharedir-install-perl,
+                     libfile-sharedir-perl,
+                     libgd-perl <!nocheck>,
+                     libgraph-perl <!nocheck>,
+                     libgraphviz-perl <!nocheck>,
+                     libjson-maybexs-perl (>= 1.003003) <!nocheck>,
+                     libmoo-perl <!nocheck>,
+                     libpackage-variant-perl <!nocheck>,
+                     libparse-recdescent-perl <!nocheck>,
+                     libspreadsheet-parseexcel-perl <!nocheck>,
+                     libtemplate-perl <!nocheck>,
+                     libtest-differences-perl <!nocheck>,
+                     libtest-exception-perl <!nocheck>,
+                     libtest-pod-perl <!nocheck>,
+                     libtext-recordparser-perl <!nocheck>,
+                     libtry-tiny-perl <!nocheck>,
+                     libxml-libxml-perl <!nocheck>,
+                     libxml-writer-perl <!nocheck>,
+                     libyaml-perl <!nocheck>,
+                     perl
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libsql-translator-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libsql-translator-perl.git
+Homepage: http://sqlfairy.sourceforge.net/
+Rules-Requires-Root: no
+
+Package: libsql-translator-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libcarp-clan-perl,
+         libclass-makemethods-perl,
+         libdbi-perl,
+         libfile-sharedir-perl,
+         libmoo-perl,
+         libpackage-variant-perl,
+         libparse-recdescent-perl,
+         libtry-tiny-perl
+Recommends: libcgi-pm-perl,
+            libgd-perl,
+            libgraph-perl,
+            libgraphviz-perl,
+            libjson-maybexs-perl (>= 1.003003),
+            libspreadsheet-parseexcel-perl,
+            libtemplate-perl,
+            libtext-recordparser-perl,
+            libxml-libxml-perl,
+            libxml-writer-perl,
+            libyaml-perl
+Conflicts: sqlfairy
+Provides: sqlfairy
+Replaces: sqlfairy
+Description: SQL translation library
+ SQL::Translator (also known as SQL Fairy) is a collection of Perl modules
+ for manipulating structured data definitions (mostly database schemas). It
+ can perform tasks like converting between different SQL data definition
+ language (DDL) dialects, visualizations of schemas (pseudo-ER diagrams
+ created with GD or GraphViz), converting non-RDBMS files to SQL schemas
+ (xSV text files, Excel spreadsheets), serializing parsed schemas (via
+ Storable, YAML and XML), creating documentation, and more.
